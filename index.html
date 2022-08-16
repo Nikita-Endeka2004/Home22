@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="./assets/js/app.js"></script>
+</html>
+<body>
+
+    <div class="row">
+        <div class="col-md-12">
+
+            <fieldset>
+              
+              <legend> Body mass index</legend>
+            
+              <input type="checkbox" id="santInput" value="under_13"><label for="under_13" class="light">Сантиметры</label><br>
+
+              <label for="name">Рост:</label>
+              <input type="number" id="growhtInput">
+            
+              <label for="email">Вес:</label>
+              <input type="number" id="weightInput">
+              
+            </fieldset>
+           
+            <button onclick="calc()">Анализ</button>
+
+            <h3>Ваш индекс: <output id="indexInput"></output> </h3>
+
+            <h3><output id="outOutput"></output></h3>
+            
+            </div>
+          </div>
+          
+    
+</body>
+</html>
