@@ -31,17 +31,23 @@ if(sant){
 }
 else{
 
-    if(Number.isInteger(growht)){
+    if(growht < 10 && growht === Number.isInteger(growht)){
 
-        growht = growht / 100;
+        growht = growht * 100;
 
-        ind = weight / (growht**2);
+        if(Number.isInteger(growht)){
 
-        ind = Math.round(ind*100) / 100;
-
-        indexInput.innerHTML = ind;
-
-    }
+            growht = growht / 100;
+    
+            ind = weight / (growht**2);
+    
+            ind = Math.round(ind*100) / 100;
+    
+            indexInput.innerHTML = ind;
+    
+        }
+        
+   }
     else{
 
         ind = weight / (growht**2);
